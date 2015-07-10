@@ -1,6 +1,6 @@
 {
 	"name": "postcss-sass-extend",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "PostCSS Sass Extend is a PostCSS plugin that allows you to use @extend and placeholder classes as you would in Sass",
 	"keywords": [
 		"postcss",
