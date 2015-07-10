@@ -1,0 +1,27 @@
+%placeholder {
+	color: blue;
+}
+
+%unused-placeholder {
+	color: yellow;
+}
+
+.a {
+	@extend %placeholder;
+
+	background-color: black;
+}
+
+.b {
+	color: red;
+}
+
+.c {
+	background-color: white;
+
+	@extend %placeholder;
+}
+
+.d {
+	color: green;
+}

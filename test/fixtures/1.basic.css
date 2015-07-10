@@ -1,0 +1,7 @@
+%placeholder {
+	color: blue;
+}
+
+.a {
+	@extend %placeholder;
+}
