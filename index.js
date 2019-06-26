@@ -1,8 +1,6 @@
 var postcss = require('postcss');
 
-module.exports = postcss.plugin('postcss-sass-extend', function (opts) {
-	opts = opts || {};
-
+module.exports = postcss.plugin('postcss-sass-extend', function () {
 	var placeholderClass = /^%[A-z][\w-]*$/;
 
 	function each(parent) {

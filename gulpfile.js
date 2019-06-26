@@ -18,8 +18,8 @@ gulp.task('test', function (done) {
 		.pipe(mocha()).on('error', done);
 });
 
-gulp.task('default', ['lint', 'test']);
+gulp.task('default', gulp.series('lint', 'test'));
 
 gulp.task('watch', function() {
-	gulp.watch(files, ['lint', 'test']);
+	gulp.watch(files, gulp.series('lint', 'test'));
 });
