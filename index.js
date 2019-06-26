@@ -5,7 +5,7 @@ module.exports = postcss.plugin('postcss-sass-extend', function (opts) {
 
 	var placeholderClass = /^%[A-z][\w-]*$/;
 
-	function each(parent, result) {
+	function each(parent) {
 		var index = -1;
 		var node;
 
@@ -13,7 +13,7 @@ module.exports = postcss.plugin('postcss-sass-extend', function (opts) {
 			if (node.type === 'rule') index = eachRule(node, parent, index);
 			else if (node.type === 'atrule') index = eachAtRule(node, parent, index);
 
-			if (node.nodes) each(node, result);
+			if (node.nodes) each(node);
 		}
 
 		index = removeUnusedPlaceholders(parent, index);
