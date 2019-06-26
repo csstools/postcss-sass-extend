@@ -22,7 +22,7 @@
 	},
 	"homepage": "https://github.com/jonathantneal/postcss-sass-extend",
 	"dependencies": {
-		"postcss": "^4.1.13"
+		"postcss": "^7.0.17"
 	},
 	"devDependencies": {
 		"chai": "^3.0.0",

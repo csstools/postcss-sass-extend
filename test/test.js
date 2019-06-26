@@ -8,7 +8,7 @@ var dir = './test/fixtures/';
 var expectedExtension = /\.expected\.css$/;
 
 var test = function (input, output, opts, done) {
-	postcss([ plugin(opts) ]).process(input).then(function (result) {
+	postcss([ plugin(opts) ]).process(input, {from: undefined}).then(function (result) {
 		expect(result.css).to.eql(output);
 
 		expect(result.warnings()).to.be.empty;
